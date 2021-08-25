@@ -6,4 +6,3 @@
 #SBATCH --partition=debug
 
 singularity run --nv /opt/apps/sif/tensorflow_21.07-tf2-py3.sif python -c 'import tensorflow as tf; print(tf.__version__)'
-
