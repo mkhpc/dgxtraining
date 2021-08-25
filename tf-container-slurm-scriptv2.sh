@@ -5,4 +5,6 @@
 #SBATCH --gres=gpu:2
 #SBATCH --partition=debug
 
+git clone https://github.com/tensorflow/benchmarks.git
+cd benchmarks/scripts/tf_cnn_benchmarks
 singularity run --nv /opt/apps/sif/tensorflow_21.07-tf2-py3.sif python tf_cnn_benchmarks.py --num_gpus=2 --batch_size=32 --model=resnet50 --variable_update=parameter_server
