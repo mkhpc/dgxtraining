@@ -8,4 +8,3 @@
 git clone https://github.com/tensorflow/benchmarks.git
 cd benchmarks/scripts/tf_cnn_benchmarks
 singularity run --nv /opt/apps/sif/tensorflow_21.07-tf2-py3.sif python tf_cnn_benchmarks.py
-
